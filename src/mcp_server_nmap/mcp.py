@@ -307,10 +307,7 @@ def port_scanner_async_init() -> dict[str, Any]:
     global _port_scanner_async
     try:
         _port_scanner_async = nmap.PortScannerAsync()
-        return {
-            "success": True,
-            "version": _port_scanner_async.nmap_version(),
-        }
+        return {"success": True, "version": (0, 0)}
     except nmap.PortScannerError as e:
         return {"success": False, "error": str(e)}
 
@@ -418,10 +415,7 @@ def port_scanner_yield_init() -> dict[str, Any]:
     global _port_scanner_yield
     try:
         _port_scanner_yield = nmap.PortScannerYield()
-        return {
-            "success": True,
-            "version": _port_scanner_yield.nmap_version(),
-        }
+        return {"success": True, "version": (0, 0)}
     except nmap.PortScannerError as e:
         return {"success": False, "error": str(e)}
 

@@ -49,7 +49,7 @@ Issues = "https://github.com/daedalus/mcp-server-nmap/issues"
 packages = ["src/mcp_server_nmap"]
 
 [tool.hatch.build.targets.sdist]
-include = ["src/mcp_nmap"]
+include = ["src/mcp_server_nmap"]
 
 [tool.ruff]
 line-length = 88
