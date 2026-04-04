@@ -14,6 +14,7 @@ authors = [
 ]
 dependencies = [
     "python-nmap==0.7.1",
+    "fastmcp",
 ]
 
 [project.optional-dependencies]
