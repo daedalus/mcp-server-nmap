@@ -24,6 +24,8 @@ This MCP server wraps the python-nmap library, allowing AI assistants to perform
 pip install mcp-server-nmap
 ```
 
+**mcp-name:** io.github.daedalus/mcp-server-nmap
+
 ## MCP Server Registration
 
 Add this to your MCP settings file:
